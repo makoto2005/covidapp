@@ -8,6 +8,22 @@ const routes: Routes = [
     path: 'screening',
     loadChildren: () => import('./screening/screening.module').then( m => m.ScreeningPageModule)
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'what2do',
+    loadChildren: () => import('./what2do/what2do.module').then( m => m.What2doPageModule)
+  },
+  {
+    path: 'testing',
+    loadChildren: () => import('./testing/testing.module').then( m => m.TestingPageModule)
+  },
+  {
+    path: 'support',
+    loadChildren: () => import('./support/support.module').then( m => m.SupportPageModule)
+  },
 ];
 
 @NgModule({
